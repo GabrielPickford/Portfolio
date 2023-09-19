@@ -5,6 +5,14 @@
     scroll-behavior: smooth;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cambia esto al color de fondo que desees */
+    z-index: 100;
+  }
+
 .section__padding {
     padding: 4rem, 6rem;
 }
