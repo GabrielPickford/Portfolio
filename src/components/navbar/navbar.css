@@ -1,4 +1,62 @@
-.navbar{
-    background-color: rgba(139,0,139, 0.3);
-    color: white;
-}
+.port__navbar {
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 60px;
+  }
+  @media (max-width: 991px) {
+    .port__navbar {
+      padding: 0 20px;
+    }
+  }
+  .port__navbar__2 {
+    display: flex;
+    width: 100%;
+    max-width: 1087px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .port__navbar__2 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .port__navbar__projects {
+    font-family: Lato, sans-serif;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .port__navbar__logo {
+    align-self: stretch;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+    font: 30px Inter, sans-serif;
+  }
+  .port__navbar__button {
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 11px 0;
+  }
+  .port__navbar__contact {
+    font-family: Maven Pro, sans-serif;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px 36px;
+  }
+  @media (max-width: 991px) {
+    .port__navbar__contact {
+      padding: 0 20px;
+    }
+  }

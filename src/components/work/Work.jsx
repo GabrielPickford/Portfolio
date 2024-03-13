@@ -1,13 +1,12 @@
 import React from 'react';
 import f1 from '../../assets/f1.jpg';
 import f2 from '../../assets/f2.jpg';
-import f3 from '../../assets/f3.jpg';
+import f3 from '../../assets/f4.jpg';
 import './work.css';
 
 const Work = () => {
   return (
     <div >
-      Work
       <div className='pro__a' >
         <div className='pro__img'>
           <a target='blank'  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
