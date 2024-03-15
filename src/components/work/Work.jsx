@@ -1,58 +1,43 @@
 import React from 'react';
-import f1 from '../../assets/f1.jpg';
-import f2 from '../../assets/f2.jpg';
-import f3 from '../../assets/f4.jpg';
+import { images } from '../../constants';
 import './work.css';
 
 const Work = () => {
   return (
-    <div >
-      <div className='pro__a' >
-        <div className='pro__img'>
-          <a target='blank'  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            <img src={f1} className='img' alt='franchesco bergolini' />
-          </a>
+    <div className="app__work__div">
+    <div className="app__work__div-2">Projects</div>
+    <div className="app__work__div-3" />
+    <div className="app__work__div-4">
+      <div className="app__work__div-5">
+        <div className="app__work__column">
+          <img src={images.golosa} className='app__work__img' alt='franchesco bergolini' />
         </div>
-        <div className='pro__text'>
-          <h2>Nombre del sitio web</h2>
-          <p>Descripcion de la pagina</p>
-          <div className='pro__links'>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Code</a>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Web Demo</a>
-          </div>
-        </div>
-      </div>
-      <div className='pro__a' >
-        <div className='pro__img'>
-          <a target='blank'  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            <img src={f2} className='img' alt='franchesco bergolini' />
-          </a>
-        </div>
-        <div className='pro__text'>
-          <h2>Nombre del sitio web</h2>
-          <p>Descripcion de la pagina</p>
-          <div className='pro__links'>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Code</a>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Web Demo</a>
-          </div>
-        </div>
-      </div>
-      <div className='pro__a' >
-        <div className='pro__img'>
-          <a target='blank'  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            <img src={f3} className='img' alt='franchesco bergolini' />
-          </a>
-        </div>
-        <div className='pro__text'>
-          <h2>Nombre del sitio web</h2>
-          <p>Descripcion de la pagina</p>
-          <div className='pro__links'>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Code</a>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Web Demo</a>
+        <div className="app__work__column-2">
+          <div className="app__work__div-6">
+            <div className="app__work__div-7">Golosa</div>
+            <div className="app__work__div-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div className="app__work__div-9">
+      <div className="app__work__div-10">
+        <div className="app__work__column-3">
+          <div className="app__work__div-11">
+            <div className="app__work__div-12">Atelier</div>
+            <div className="app__work__div-13">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </div>
+          </div>
+        </div>
+        <div className="app__work__column-4">
+          <img src={images.atelier} className='app__work__img' alt='franchesco bergolini' />
+        </div>
+      </div>
+    </div>
+  </div>
   );
 };
 

@@ -3,15 +3,15 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="port__navbar">
-    <div className="port__navbar__2">
-      <div className="port__navbar__projects">Projects</div>
-      <div className="port__navbar__logo">Gabriel Tambare</div>
-      <div className="port__navbar__button">
-        <div className="port__navbar__contact">Contact Me</div>
+    <div className="app__navbar">
+      <div className="app__navbar__projects">
+        <li className="p__opensans"><a href="#projects">Projects</a></li>
+      </div>
+      <div className="app__navbar__logo">Gabriel Tambare</div>
+      <div className="app__navbar__contact">
+        <li className="p__opensans"><a href="#projects">Contact Me</a></li>
       </div>
     </div>
-  </div>
   );
 };
 
