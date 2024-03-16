@@ -7,9 +7,9 @@
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
   --color-gray: #545454;
-  --color-crimson: #F5EFDB;
-  --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+  --color-purple: rgba(65, 1, 96, 1);
+  --color-yellow: #ffde00;;
 }
 
 * {
