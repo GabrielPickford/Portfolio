@@ -132,14 +132,13 @@
 }
 
 .app__header__linkedin-logo img{
-  aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
   width: 40px;
   fill: #000;
 }
 
-.app__navbar__linkedin-logo div:hover,
+.app__navbar__linkedin-logo :hover,
 .app__navbar__github-logo :hover {
   color: var(--color-white);
 }

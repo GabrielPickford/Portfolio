@@ -6,6 +6,7 @@ import linkedin from '../assets/linkedin.png';
 import about from '../assets/about.png';
 import atelier from '../assets/atelier.png';
 import golosa from '../assets/golosa.png';
+import copy from '../assets/copy.png';
 
 export default {
     portrait,
@@ -16,5 +17,6 @@ export default {
     about,
     atelier,
     golosa,
+    copy
   };
   

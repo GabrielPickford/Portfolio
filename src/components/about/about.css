@@ -1,210 +1,246 @@
-.app__about__div {
-    border-color: rgba(255, 222, 0, 1);
-    border-style: solid;
-    border-top-width: 3px;
-    background-color: #410160;
-    display: flex;
-    padding-top: 80px;
-    flex-direction: column;
+.app__about {
+  border-color: var(--color-yellow);
+  border-style: solid;
+  border-width: 3px 0px 3px 0px;
+  background-color: #410160;
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+}
+
+.app__about__info {
+  align-self: center;
+  margin-top: 13px;
+  width: 100%;
+  max-width: 987px;
+}
+
+@media (max-width: 991px) {
+  .app__about__info {
+    max-width: 100%;
   }
-  .app__about__div-2 {
-    align-self: center;
-    margin-top: 13px;
+}
+
+.app__about__info-box {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .app__about__info-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.app__about__img-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .app__about__img-column {
     width: 100%;
-    max-width: 987px;
   }
-  @media (max-width: 991px) {
-    .app__about__div-2 {
-      max-width: 100%;
-    }
-  }
-  .app__about__div-3 {
-    gap: 20px;
-    display: flex;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-3 {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0px;
-    }
-  }
-  .app__about__column {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 50%;
-    margin-left: 0px;
-  }
-  @media (max-width: 991px) {
-    .app__about__column {
-      width: 100%;
-    }
-  }
+}
+
+.app__about__portrait img {
+  border-color: rgba(255, 89, 79, 1);
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 81px;
+  height: 336px;
+  width: 386px;
+  object-fit: cover
+}
+
+@media (max-width: 991px) {
   .app__about__img {
-    aspect-ratio: 1.15;
-    object-fit: auto;
-    object-position: center;
+    margin-top: 40px;
+  }
+}
+
+.app__about__words-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .app__about__words-column {
     width: 100%;
-    border-color: rgba(255, 89, 79, 1);
-    border-style: solid;
-    border-width: 5px;
-    flex-grow: 1;
   }
-  @media (max-width: 991px) {
-    .app__about__img {
-      margin-top: 40px;
-    }
+}
+
+.app__about__words-padding {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  font-size: 20px;
+  color: #ffde00;
+  font-weight: 700;
+  margin: auto 0;
+  padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+  .app__about__words-padding {
+    max-width: 100%;
+    margin-top: 40px;
   }
-  .app__about__column-2 {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 50%;
-    margin-left: 20px;
+}
+
+.app__about__title {
+  letter-spacing: -0.48px;
+  color: var(--color-yellow);
+  font: 700 24px var(--font-alt);
+}
+
+@media (max-width: 991px) {
+  .app__about__title {
+    max-width: 100%;
   }
-  @media (max-width: 991px) {
-    .app__about__column-2 {
-      width: 100%;
-    }
+}
+
+.app__about__line {
+  background-color: var(--color-yellow);
+  margin-top: 15px;
+  width: 75px;
+  height: 3px;
+}
+
+@media (max-width: 991px) {
+  .app__about__line {
+    max-width: 100%;
   }
-  .app__about__div-4 {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    font-size: 20px;
-    color: #ffde00;
-    font-weight: 700;
-    margin: auto 0;
+}
+
+.app__about__resume {
+  text-align: left;
+  font: 400 18px var(--font-alt);
+  margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+  .app__about__resume {
+    max-width: 100%;
+  }
+}
+
+.app__about__buttons-box {
+  align-self: left;
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .app__about__buttons-box {
+    white-space: initial;
+  }
+}
+
+.app__about__button {
+  font: 600 18px var(--font-alt);
+  text-align: center;
+  color: var(--color-yellow);
+  background-color: transparent;
+  border: 2px solid var(--color-yellow);
+  width: 120px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  &:hover{
+    color: #000;
+    background-color: var(--color-yellow);
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+  .app__about__more-button {
+    white-space: initial;
     padding: 0 20px;
   }
-  @media (max-width: 991px) {
-    .app__about__div-4 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
+}
+
+.app__about__cv-button {
+  font-family: Maven Pro, sans-serif;
+  justify-content: center;
+  background-color: #ffde00;
+  padding: 15px 47px;
+}
+
+@media (max-width: 991px) {
+  .app__about__cv-button {
+    white-space: initial;
+    padding: 0 20px;
   }
-  .app__about__div-5 {
-    text-align: center;
-    letter-spacing: -0.48px;
-    font: 24px Maven Pro, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-5 {
-      max-width: 100%;
-    }
-  }
-  .app__about__div-6 {
-    border-color: rgba(255, 222, 0, 1);
-    border-style: solid;
-    border-width: 3px;
-    background-color: #ffde00;
-    margin-top: 23px;
-    height: 3px;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-6 {
-      max-width: 100%;
-    }
-  }
-  .app__about__div-7 {
-    font-family: Maven Pro, sans-serif;
-    font-weight: 400;
-    margin-top: 19px;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-7 {
-      max-width: 100%;
-    }
-  }
-  .app__about__div-8 {
-    align-self: start;
-    display: flex;
-    margin-top: 21px;
-    gap: 10px;
-    color: #000;
-    white-space: nowrap;
-    text-align: center;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-8 {
-      white-space: initial;
-    }
-  }
-  .app__about__div-9 {
-    font-family: Maven Pro, sans-serif;
-    justify-content: center;
-    background-color: #ffde00;
-    padding: 16px 37px;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-9 {
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
-  .app__about__div-10 {
-    font-family: Maven Pro, sans-serif;
-    justify-content: center;
-    background-color: #ffde00;
-    padding: 15px 47px;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-10 {
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
-  .app__about__div-11 {
-    justify-content: center;
-    align-items: center;
-    border-color: rgba(255, 222, 0, 1);
-    border-style: solid;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
-    background-color: rgba(0, 0, 0, 0.62);
-    display: flex;
-    margin-top: 85px;
-    width: 100%;
-    font-size: 28px;
-    color: #fff;
-    font-weight: 700;
-    white-space: nowrap;
-    text-align: center;
-    padding: 53px 60px;
-  }
-  @media (max-width: 991px) {
-    .app__about__div-11 {
-      max-width: 100%;
-      margin-top: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
-  .app__about__div-12 {
-    display: flex;
-    margin-left: 53px;
-    width: 646px;
+}
+
+.app__about__email-section {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.62);
+  display: flex;
+  margin-top: 85px;
+  width: 100%;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  padding: 53px 60px;
+}
+
+@media (max-width: 991px) {
+  .app__about__email-section {
     max-width: 100%;
-    gap: 20px;
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
   }
-  @media (max-width: 991px) {
-    .app__about__div-12 {
-      flex-wrap: wrap;
-      white-space: initial;
-    }
+}
+
+.app__about__email-box {
+  display: flex;
+  margin-left: 53px;
+  width: 646px;
+  max-width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .app__about__email-box {
+    flex-wrap: wrap;
+    white-space: initial;
   }
-  .app__about__div-13 {
-    font-family: Maven Pro, sans-serif;
-    flex-grow: 1;
-    flex-basis: auto;
-    margin: auto 0;
-  }
-  .app__about__img-2 {
-    aspect-ratio: 2.7;
-    object-fit: auto;
-    object-position: center;
-    width: 122px;
-    fill: #ffde00;
-    max-width: 100%;
-  }
+}
+
+.app__about__email {
+  font-family: Maven Pro, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+.app__about__copy {
+  aspect-ratio: 2.7;
+  object-fit: auto;
+  object-position: center;
+  width: 122px;
+  fill: #ffde00;
+  max-width: 100%;
+}
