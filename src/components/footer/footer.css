@@ -1,63 +1,59 @@
-.div {
-    border-color: rgba(0, 0, 0, 1);
-    border-style: solid;
-    border-bottom-width: 55px;
-    background-color: #ffde00;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: #000;
-    font-weight: 400;
-    text-align: center;
-    padding: 80px 11px 11px 80px;
+.app__footer {
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-bottom-width: 55px;
+  background-color: #ffde00;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 11px 11px 80px;
+}
+@media (max-width: 991px) {
+  .app__footer {
+    padding-left: 20px;
   }
-  @media (max-width: 991px) {
-    .div {
-      padding-left: 20px;
-    }
+}
+.app__footer__2 {
+  align-self: center;
+  display: flex;
+  margin-top: 23px;
+  width: 100%;
+  max-width: 1128px;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .app__footer__2 {
+    max-width: 100%;
+    flex-wrap: wrap;
   }
-  .div-2 {
-    align-self: center;
-    display: flex;
-    margin-top: 21px;
-    width: 100%;
-    max-width: 1130px;
-    gap: 20px;
-  }
-  @media (max-width: 991px) {
-    .div-2 {
-      max-width: 100%;
-      flex-wrap: wrap;
-    }
-  }
-  .img {
-    aspect-ratio: 2.7;
-    object-fit: auto;
-    object-position: center;
-    width: 121px;
+}
+.app__footer__logos {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.app__footer__copyright {
+  color: #000;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+  font: 400 20px Maven Pro, sans-serif;
+}
+@media (max-width: 991px) {
+  .app__footer__copyright {
     max-width: 100%;
   }
-  .div-3 {
-    font-family: Maven Pro, sans-serif;
-    flex-grow: 1;
-    flex-basis: auto;
-    margin: auto 0;
+}
+.app__footer__dots {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 15px;
+  align-self: end;
+  margin-top: 76px;
+}
+@media (max-width: 991px) {
+  .app__footer__dots {
+    margin-top: 40px;
   }
-  @media (max-width: 991px) {
-    .div-3 {
-      max-width: 100%;
-    }
-  }
-  .img-2 {
-    aspect-ratio: 1;
-    object-fit: auto;
-    object-position: center;
-    width: 15px;
-    align-self: end;
-    margin-top: 73px;
-  }
-  @media (max-width: 991px) {
-    .img-2 {
-      margin-top: 40px;
-    }
-  }
+}
