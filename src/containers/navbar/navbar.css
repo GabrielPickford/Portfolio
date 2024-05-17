@@ -13,11 +13,6 @@
   height: 70px;
   z-index: 100;
 }
-@media (max-width: 991px) {
-  .app__navbar {
-    padding: 0 20px;
-  }
-}
 .app__navbar__projects,
 .app__navbar__contact  {
   color: var(--color-white);
@@ -36,13 +31,6 @@
 .app__navbar__logo {
   align-self: stretch;
   flex-grow: 1;
-  flex-basis: auto;
   margin: auto 0;
   font: 30px Inter, sans-serif;
-}
-@media screen and (max-width: 1150px) {
-  .app__navbar__contact,
-  .app__navbar__projects {
-    display: none;
-  }
 }

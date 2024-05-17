@@ -1,0 +1,40 @@
+.app__footer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 55px black;
+  background-color: #ffde00;
+  width: 100%;
+  height: 300px;
+}
+.app__footer__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  width: 100%;
+  height: 100%;
+
+}
+.app__footer__logos {
+  display: flex;  
+  justify-content: center;
+  align-items: center ;
+  gap: 30px;
+  height: 100%;
+  width: 50%;
+}
+.app__footer__copyright-box {
+  text-align: center;
+  justify-content: center;
+  align-items: center ;
+  height: 100%;
+  width: 50%;
+  font: 400 20px Maven Pro, sans-serif;
+}
+.app__footer__copyright-box{
+  display: flex;
+}
+.app__footer__dots {
+  position: relative;
+  align-self: end; 
+  margin-right: 4px;
+}

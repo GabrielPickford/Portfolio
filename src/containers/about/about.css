@@ -4,34 +4,20 @@
   border-width: 3px 0px 3px 0px;
   background-color: #410160;
   display: flex;
-  padding-top: 80px;
   flex-direction: column;
 }
 
-.app__about__info {
+.app__about__info { 
   align-self: center;
   margin-top: 13px;
+  margin-bottom: 85px;
   width: 100%;
   max-width: 987px;
-}
-
-@media (max-width: 991px) {
-  .app__about__info {
-    max-width: 100%;
-  }
 }
 
 .app__about__info-box {
   gap: 20px;
   display: flex;
-}
-
-@media (max-width: 991px) {
-  .app__about__info-box {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
-  }
 }
 
 .app__about__img-column {
@@ -40,12 +26,6 @@
   line-height: normal;
   width: 50%;
   margin-left: 0px;
-}
-
-@media (max-width: 991px) {
-  .app__about__img-column {
-    width: 100%;
-  }
 }
 
 .app__about__portrait img {
@@ -58,24 +38,12 @@
   object-fit: cover
 }
 
-@media (max-width: 991px) {
-  .app__about__img {
-    margin-top: 40px;
-  }
-}
-
 .app__about__words-column {
   display: flex;
   flex-direction: column;
   line-height: normal;
   width: 50%;
   margin-left: 20px;
-}
-
-@media (max-width: 991px) {
-  .app__about__words-column {
-    width: 100%;
-  }
 }
 
 .app__about__words-padding {
@@ -88,24 +56,10 @@
   margin: auto 0;
   padding: 0 20px;
 }
-
-@media (max-width: 991px) {
-  .app__about__words-padding {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
 .app__about__title {
   letter-spacing: -0.48px;
   color: var(--color-yellow);
   font: 700 24px var(--font-alt);
-}
-
-@media (max-width: 991px) {
-  .app__about__title {
-    max-width: 100%;
-  }
 }
 
 .app__about__line {
@@ -115,22 +69,10 @@
   height: 3px;
 }
 
-@media (max-width: 991px) {
-  .app__about__line {
-    max-width: 100%;
-  }
-}
-
 .app__about__resume {
   text-align: left;
   font: 400 18px var(--font-alt);
-  margin-top: 15px;
-}
-
-@media (max-width: 991px) {
-  .app__about__resume {
-    max-width: 100%;
-  }
+  margin-top: 20px;
 }
 
 .app__about__buttons-box {
@@ -139,12 +81,6 @@
   margin-top: 30px;
   gap: 20px;
   white-space: nowrap;
-}
-
-@media (max-width: 991px) {
-  .app__about__buttons-box {
-    white-space: initial;
-  }
 }
 
 .app__about__button {
@@ -166,16 +102,6 @@
   }
 }
 
-
-
-
-@media (max-width: 991px) {
-  .app__about__more-button {
-    white-space: initial;
-    padding: 0 20px;
-  }
-}
-
 .app__about__cv-button {
   font-family: Maven Pro, sans-serif;
   justify-content: center;
@@ -183,19 +109,11 @@
   padding: 15px 47px;
 }
 
-@media (max-width: 991px) {
-  .app__about__cv-button {
-    white-space: initial;
-    padding: 0 20px;
-  }
-}
-
 .app__about__email-section {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.62);
   display: flex;
-  margin-top: 85px;
   width: 100%;
   font-size: 28px;
   color: #fff;
@@ -203,15 +121,6 @@
   white-space: nowrap;
   text-align: center;
   padding: 53px 60px;
-}
-
-@media (max-width: 991px) {
-  .app__about__email-section {
-    max-width: 100%;
-    margin-top: 40px;
-    white-space: initial;
-    padding: 0 20px;
-  }
 }
 
 .app__about__email-box {
@@ -222,25 +131,9 @@
   gap: 20px;
 }
 
-@media (max-width: 991px) {
-  .app__about__email-box {
-    flex-wrap: wrap;
-    white-space: initial;
-  }
-}
-
 .app__about__email {
   font-family: Maven Pro, sans-serif;
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
-}
-
-.app__about__copy {
-  aspect-ratio: 2.7;
-  object-fit: auto;
-  object-position: center;
-  width: 122px;
-  fill: #ffde00;
-  max-width: 100%;
 }

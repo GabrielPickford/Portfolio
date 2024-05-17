@@ -1,0 +1,38 @@
+.app__work__div-4 {
+    margin-top: 31px;
+}
+.app__work__div-5 {
+    gap: 20px; 
+    display: flex;
+}
+.app__work__column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+    margin-left: 0px;
+}
+.app__work__img {
+    aspect-ratio: 1.64;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-color: rgba(255, 89, 79, 1);
+    border-style: solid;
+    border-width: 5px;
+    flex-grow: 1;
+}
+.app__work__column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 20px;
+}
+.app__work__div-6 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    text-align: center;
+    margin: auto 0;
+}
