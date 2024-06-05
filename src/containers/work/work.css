@@ -4,10 +4,14 @@
     flex-direction: column;
     padding: 29px 25px 80px;
 }
+.app__work__main-title{
+    color: #ffde00;
+    font: 700 48px Maven Pro, sans-serif;
+    margin-left: 21px;
+    align-items: start;
+}
 .app__work__title {
     color: #ffde00;
-    align-self: start;
-    margin-left: 21px;
     font: 700 48px Maven Pro, sans-serif;
 }
 .app__work__line {

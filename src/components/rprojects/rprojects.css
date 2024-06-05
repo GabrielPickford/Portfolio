@@ -1,10 +1,12 @@
 .app__work__div-4 {
     margin-top: 31px;
 }
+
 .app__work__div-5 {
-    gap: 20px; 
+    gap: 20px;
     display: flex;
 }
+
 .app__work__column {
     display: flex;
     flex-direction: column;
@@ -12,8 +14,8 @@
     width: 63%;
     margin-left: 0px;
 }
+
 .app__work__img {
-    aspect-ratio: 1.64;
     object-fit: auto;
     object-position: center;
     width: 100%;
@@ -21,7 +23,17 @@
     border-style: solid;
     border-width: 5px;
     flex-grow: 1;
+    transition: all 0.2s;
 }
+
+.app__work__img:hover {
+    border-color: rgba(255, 89, 79, 1);
+    transform: scale(1.02);
+}   
+.app__work__img:active {
+    transform: scale(0.95)
+}
+
 .app__work__column-2 {
     display: flex;
     flex-direction: column;
@@ -29,6 +41,7 @@
     width: 37%;
     margin-left: 20px;
 }
+
 .app__work__div-6 {
     display: flex;
     flex-direction: column;

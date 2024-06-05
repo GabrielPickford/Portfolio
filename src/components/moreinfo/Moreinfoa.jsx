@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useRef} from 'react';
 import './moreinfo.css';
 
-const Moreinfo = () => {
+const Moreinfoa = ({ showMore, click }) => {
+    const moreInfoRef = useRef(null);
+
     return (
-        <div className="app__more">
+        <div className={`app__more ${showMore ? 'show' : 'hide'}`} ref={moreInfoRef}>
+            {/* <div ref={moreInfoRef} /> */}
             <p className='app__more__p'>
                 My name is Gabriel Tambare, I am 22 years old and I was born in Santa Cruz, Bolivia,
                 although I spent my childhood in Madrid, Spain.
@@ -25,8 +28,11 @@ const Moreinfo = () => {
                 Regarding my work experience, I started working at the age of 18 while at university, mostly in office environments, although I have also had experience in finance.
                 I have the skills to work in a team and collaborate with different areas within a company.
             </p>
+            <button type="button" className="app__more__button app__more__p" onClick={click}>
+                {showMore ? 'Hide' : 'More'}
+            </button>
         </div>
     );
 };
 
-export default Moreinfo; 
+export default Moreinfoa;
