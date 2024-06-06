@@ -29,12 +29,12 @@ const About = () => {
           <div className="app__about__words-padding">
             <div className="app__about__title" ref={lessInfoRef}>About me</div>
             <div className="app__about__line" />
-            <p className="app__about__resume">
+            <p className="app__about__resume p__opensans">
               Hey, my name is Gabriel, and I'm a Frontend Developer. My
               passion is to create and develop a clean UI/UX for my
               users.
             </p>
-            <p className="app__about__resume">
+            <p className="app__about__resume p__opensans">
               My main stack currently is React in combination with CSS and JavaScript, But I am in constant development learning new useful skills
             </p>
             <div className="app__about__buttons-box">

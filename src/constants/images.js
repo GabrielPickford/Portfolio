@@ -8,7 +8,7 @@ import atelier from '../assets/atelier.png';
 import golosa from '../assets/golosa.png';
 import copy from '../assets/copy.png';
 
-export default {
+const images= {
     portrait,
     dots1,
     dots2,
@@ -19,4 +19,5 @@ export default {
     golosa,
     copy
   };
+export default images
   
