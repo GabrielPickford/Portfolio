@@ -7,9 +7,7 @@ import './header.css';
 const Header = () => {
   return (
     <div className="app__header" id='home'>
-      <div className="app__header__dots">
-        <img src={images.dots1} alt="." />
-      </div>
+      {/* <img className="app__header__dots" src={images.dots1} alt="." /> */}
       <div className="app__header__title-column">
         <div className="app__header__title-box">
           <div className="app__header__title">Front-End React Developer</div>

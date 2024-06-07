@@ -1,5 +1,5 @@
 import portrait from '../assets/portrait.png';
-import dots1 from '../assets/dots1.png';
+// import dots1 from '../assets/dots1.png';
 import dots2 from '../assets/dots2.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
@@ -10,7 +10,7 @@ import copy from '../assets/copy.png';
 
 const images= {
     portrait,
-    dots1,
+    // dots1,
     dots2,
     github,
     linkedin,
