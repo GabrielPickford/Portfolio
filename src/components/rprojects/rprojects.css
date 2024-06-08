@@ -1,13 +1,12 @@
-.app__work__div-4 {
+.app__project {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1356px;
     margin-top: 31px;
 }
 
-.app__work__div-5 {
-    gap: 20px;
-    display: flex;
-}
-
-.app__work__column {
+.app__project__column-photo {
     display: flex;
     flex-direction: column;
     line-height: normal;
@@ -15,37 +14,66 @@
     margin-left: 0px;
 }
 
-.app__work__img {
+.app__project__img {
     object-fit: auto;
     object-position: center;
+    height: 100%;
     width: 100%;
-    border-color: rgba(255, 89, 79, 1);
-    border-style: solid;
-    border-width: 5px;
-    flex-grow: 1;
+    border: 5px solid rgba(255, 89, 79, 1);
     transition: all 0.2s;
 }
 
-.app__work__img:hover {
+.app__project__img:hover {
     border-color: rgba(255, 89, 79, 1);
     transform: scale(1.02);
-}   
-.app__work__img:active {
-    transform: scale(0.95)
 }
 
-.app__work__column-2 {
+.app__project__column-desc {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    line-height: normal;
     width: 37%;
+}
+
+.left_description {
+    margin-right: 20px;
+}
+
+.right_description {
     margin-left: 20px;
 }
 
-.app__work__div-6 {
+.app__project__title {
     display: flex;
-    flex-direction: column;
-    align-self: stretch;
+    align-items: end;
+    margin-top: 10px;
+    height: 50%;
+    color: #ffde00;
+    align-self: center;
+    font: 700 48px Maven Pro, sans-serif;
+}
+
+.app__project__description {
     text-align: center;
-    margin: auto 0;
+    margin-top: 10px;
+    height: 50%;
+    width: 70%;
+    color: #fff;
+    font: 400 25px Maven Pro, sans-serif;
+}
+
+@media all and (max-width: 500px) {
+    .app__project {
+        margin-top: 40px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .app__project__column-photo {
+        width: 100%;
+    }
+    .app__project__column-desc {
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+    }
 }

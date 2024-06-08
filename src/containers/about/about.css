@@ -110,6 +110,11 @@
     flex-direction: column;
     width: 100%;
   }
+  .app__about__portrait{
+    border-width: 4px;
+    width: 300px;
+    height: 300px;
+  }
   .app__about__words-padding {
     padding: 60px 60px 0px 60px;
   }
