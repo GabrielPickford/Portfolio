@@ -11,8 +11,7 @@
     word-spacing: 1px;
 }
 .h__opensans {
-    line-height: 28px;
-    font: 400 18px var(--font-alt);
+    font: 700 48px var(--font-alt);
     word-spacing: 1px;
 }
 
@@ -55,4 +54,7 @@ a {
     .p__opensans {
         font-size: 16px;
     }    
+    .h__opensans{
+        font-size: 32px;
+    }
 }

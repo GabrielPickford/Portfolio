@@ -97,11 +97,13 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.62);
-  font-size: 28px;
   color: #fff;
-  font-weight: 700;
   padding: 55px 60px;
   gap: 20px;
+}
+.app__about__email{
+  font-weight: 700;
+  font-size: 28px;
 }
 @media all and (max-width: 500px) {
   .app__about__info,
@@ -112,8 +114,8 @@
   }
   .app__about__portrait{
     border-width: 4px;
-    width: 300px;
-    height: 300px;
+    max-width: 70vw;
+    max-height: 70vw;
   }
   .app__about__words-padding {
     padding: 60px 60px 0px 60px;
@@ -135,5 +137,8 @@
       background-color: transparent;
       color: transparent;
     }
+  }
+  .app__about__email{
+    font-size: 5vw;
   }
 }

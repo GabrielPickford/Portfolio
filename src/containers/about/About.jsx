@@ -23,7 +23,7 @@ const About = () => {
     <div className="app__about" id='contact'>
       <div className="app__about__info">
         <div className="app__about__img-column">
-          <img className="app__about__portrait" src={images.about} alt="portrait" />
+          <img className="app__about__portrait" src={images.about} alt="portrait"/>
         </div>
         <div className="app__about__words-column">
           <div className="app__about__words-padding">

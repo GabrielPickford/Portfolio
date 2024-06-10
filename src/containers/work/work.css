@@ -4,19 +4,27 @@
     flex-direction: column;
     padding: 29px 25px 80px;
 }
-.app__work__main-title{
+
+.app__work__main-title {
     color: #ffde00;
     font: 700 48px Maven Pro, sans-serif;
-    margin-left: 21px;
     align-items: start;
 }
+
 .app__work__title {
     color: #ffde00;
     font: 700 48px Maven Pro, sans-serif;
 }
+
 .app__work__line {
-    border: 3px solid #ffde00;
+    background-color: var(--color-yellow);
+    margin-top: 20px;
     width: 75px;
-    height: 3px;
-    margin: 11px 0 0 21px;
+    height: 4px;
+}
+
+@media all and (max-width: 500px) {
+    .app__work__line {
+        margin-bottom: -30px;
+    }
 }
