@@ -18,14 +18,14 @@ const Header = () => {
           </div>
           <div className="app__header__logos">
             <a className="app__header__github-logo" href="https://github.com/GabrielPickford" target='_blank' rel="noreferrer">
-              <LuGithub size='2rem' /></a>
+              <LuGithub size='1.9rem' /></a>
             <a className="app__header__linkedin-logo" href="https://www.linkedin.com/in/gabriel-tambare-a38778273/" target='_blank' rel="noreferrer">
               <LiaLinkedin size='2.5rem' /></a>
           </div>
         </div>
       </div>
       <div className="app__header__photo-column">
-        <img className="app__header__portrait" src={images.portrait} alt="portrait" />
+        <img className="app__header__portrait" src={images.portrait} alt="portrait"  />
       </div>
     </div>
   );

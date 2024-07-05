@@ -17,7 +17,7 @@ const images= {
     about,
     atelier,
     golosa,
-    copy
+    copy,
   };
 export default images
   

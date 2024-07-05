@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   border-bottom: solid 55px black;
-  background-color: #ffde00;
+  background-color: var(--color-yellow);
   justify-content: center;
   align-items: center ;
   width: 100%;
@@ -12,6 +12,7 @@
   display: flex;  
   justify-content: center;
   align-items: center ;
+  margin: 60px;
   gap: 30px;
   height: 100%;
   width: 50%;
@@ -34,10 +35,11 @@
   margin: 0px 4px 4px 0;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
   .app__footer {
     max-height: 50vw;
     border-bottom-width: 10vw;
+    flex-direction: column;
   }
   .app__footer__copyright{
     font-size: 12px

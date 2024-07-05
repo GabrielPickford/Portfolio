@@ -1,11 +1,11 @@
 .app__about {
-  border: 3px 0px 3px 0px solid var(--color-yellow);
-  background-color: #410160;
+  background-color: var(--color-purple);
   display: flex;
   align-self: center;
   justify-content: center;
   flex-direction: column;
   font-family: Maven Pro, sans-serif;
+  color: var(--color-light-yellow);
 }
 
 .app__about__info { 
@@ -25,7 +25,7 @@
 }
 
 .app__about__portrait {
-  border: 5px solid rgba(255, 89, 79, 1);
+  border: 5px solid var(--color-orange);
   height: 336px;
   width: 386px;
   object-fit: cover;
@@ -42,7 +42,6 @@
   flex-direction: column;
   align-self: stretch;
   font-size: 20px;
-  color: #ffde00;
   font-weight: 700;
   padding: 0px 60px 0px 60px;
 }
@@ -75,9 +74,9 @@
 .app__about__button {
   font: 600 18px var(--font-alt);
   text-align: center;
-  color: var(--color-yellow);
+  color: var(--color-light-yellow);
   background-color: transparent;
-  border: 2px solid var(--color-yellow);
+  border: 2px solid var(--color-light-yellow);
   width: 120px;
   height: 44px;
   display: flex;
@@ -96,7 +95,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.62);
+  background-color:  #190025;
   color: #fff;
   padding: 55px 60px;
   gap: 20px;
@@ -114,8 +113,8 @@
   }
   .app__about__portrait{
     border-width: 4px;
-    max-width: 70vw;
-    max-height: 70vw;
+    max-width: 50vw;
+    max-height: 50vw;
   }
   .app__about__words-padding {
     padding: 60px 60px 0px 60px;

@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Toaster, toast } from 'react-hot-toast';
 import { images } from '../../constants';
 import './about.css';
 import Moreinfo from '../../components/moreinfo/Moreinfoa';
@@ -18,16 +20,15 @@ const About = () => {
     }
   };
 
-
   return (
-    <div className="app__about" id='contact'>
+    <div className="app__about" id='contact'ref={lessInfoRef}>
       <div className="app__about__info">
         <div className="app__about__img-column">
-          <img className="app__about__portrait" src={images.about} alt="portrait"/>
+          <img className="app__about__portrait" src={images.about} alt="portrait" />
         </div>
         <div className="app__about__words-column">
           <div className="app__about__words-padding">
-            <div className="app__about__title" ref={lessInfoRef}>About me</div>
+            <div className="app__about__title" >About me</div>
             <div className="app__about__line" />
             <p className="app__about__resume p__opensans">
               Hey, my name is Gabriel, and I'm a Frontend Developer. My
@@ -41,7 +42,10 @@ const About = () => {
               <button type="button" className="app__about__button" onClick={click} >
                 {showLess ? 'Less' : 'More'}
               </button>
-              <button type="button" className="app__about__button" ref={moreInfoRef}>CV</button>
+              <a href='./Profile.pdf' download type="button" className="app__about__button" ref={moreInfoRef}
+                onClick={() => {}}>
+                CV
+              </a>
             </div>
           </div>
         </div>
@@ -52,10 +56,21 @@ const About = () => {
         <Moreinfo showMore={showLess} click={click} />
       </div>
 
-
       <div className="app__about__email-section">
-          <div className="app__about__email" id='projects'>josegabriel.jgtc42@gmail.com</div>
-          <button type="button" className="app__about__button copy">Copy</button>
+        <div className="app__about__email" id='projects'>josegabriel.jgtc42@gmail.com</div>
+        <CopyToClipboard text='josegabriel.jgtc42@gmail.com'>
+          <button type="button" className="app__about__button copy"
+            onClick={() => toast('Copied',{
+              className: 'p__opensans ',
+              style: {
+                backgroundColor: " #ffd900",
+                color: 'black'
+              }
+            })}>
+            Copy
+          </button>
+        </CopyToClipboard>
+        <Toaster position="bottom-center"/>
       </div>
     </div>
   );

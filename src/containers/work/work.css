@@ -1,18 +1,18 @@
 .app__works {
-    background-color: #410160;
+    background-color: var(--color-purple);
     display: flex;
     flex-direction: column;
     padding: 29px 25px 80px;
 }
 
 .app__work__main-title {
-    color: #ffde00;
+    color: var(--color-yellow);
     font: 700 48px Maven Pro, sans-serif;
     align-items: start;
 }
 
 .app__work__title {
-    color: #ffde00;
+    color: var(--color-yellow);
     font: 700 48px Maven Pro, sans-serif;
 }
 

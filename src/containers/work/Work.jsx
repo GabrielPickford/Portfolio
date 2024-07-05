@@ -11,10 +11,13 @@ const Work = () => {
       <div className="app__work__line" />
       <Rprojects title={"Atelier"} image={images.atelier}
         description={"Online store of handmade jewelry"}
-        site={"https://atelier-phi.vercel.app/"} />
+        site={"https://atelier-phi.vercel.app/"}
+        code={"https://github.com/GabrielPickford/Atelier"} />
       <Lprojects title={"Golosa"} image={images.golosa}
         description={"Ice cream shop website"}
-        site={"https://golosa.vercel.app/"} />
+        site={"https://golosa.vercel.app/"}
+        code={"https://github.com/GabrielPickford/Restaurant"} />
+
     </div>
   );
 };

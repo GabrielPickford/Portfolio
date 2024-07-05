@@ -15,12 +15,6 @@
   align-items: center;
   width: 55%;
 }
-.app__header__photo-column {
-  display: flex;
-  width: 45%;
-  justify-content: center;
-  align-items: center; 
-}
 .app__header__dots {
   display: flex;
   width: 20px;
@@ -63,12 +57,21 @@
   align-items: center ;
   gap: 30px;
 }
-.app__header__github-logo:hover,
-.app__header__linkedin-logo:hover{
-  color: var(--color-gray);
+@media (hover :hover){
+  .app__header__github-logo:hover,
+  .app__header__linkedin-logo:hover{
+    color: var(--color-gray);
+  }
+}
+.app__header__photo-column {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  align-items: center; 
 }
 .app__header__portrait {
   display: flex;  
+  background-color: rgba(147, 28, 218, 1);
   border: 0.5rem solid rgba(147, 28, 218, 1);
   margin-top: 80px;
   height: 639px;
@@ -76,28 +79,14 @@
   object-fit: cover;
 }
 
-/* @media screen and (min-width: 2000px) {
-  .app__aboutus-content_knife img {
-      height: 1110px;
-  }
-
-  .app__aboutus-content_about p,
-  .app__aboutus-content_history p {
-      margin: 4rem 0;
+@media screen and (max-width: 1150px) {
+  .app__header__portrait { 
+    height: 639px;
+    width: 70vh;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .app__aboutus-content {
-      flex-direction: column;
-  }
-
-  .app__aboutus-content_knife {
-      margin: 4rem 0;
-  }
-} */
-
-@media all and (max-width: 500px) {
   .app__header {
     flex-direction: column;
     box-shadow:none;
@@ -113,7 +102,14 @@
   .app__header__portrait {
     margin-top: 80px;
     border-width: 4px;
-    max-width: 70vw;
-    max-height: 70vw;
+    max-width: 60vw;
+    max-height: 60vw;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .app__header__portrait {
+    min-width: 50vw;
+    max-height: 50vw;
   }
 }

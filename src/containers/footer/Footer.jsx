@@ -9,8 +9,8 @@ const Footer = () => {
     <div className="app__footer">
         <div className="app__footer__logos">
           <a className="app__header__github-logo" href="https://github.com/GabrielPickford" target='_blank' rel="noreferrer">
-          <LuGithub size='2rem' /></a>
-          <a href="https://www.linkedin.com/in/gabriel-tambare-a38778273/" target='_blank' rel="noreferrer">
+          <LuGithub size='1.9rem' /></a>
+          <a className="app__header__linkedin-logo" href="https://www.linkedin.com/in/gabriel-tambare-a38778273/" target='_blank' rel="noreferrer">
           <LiaLinkedin size='2.5rem'/></a>
         </div>
         <div className="app__footer__copyright-box">
