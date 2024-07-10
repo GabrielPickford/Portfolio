@@ -42,7 +42,7 @@ const About = () => {
               <button type="button" className="app__about__button" onClick={click} >
                 {showLess ? 'Less' : 'More'}
               </button>
-              <a href='./Profile.pdf' download type="button" className="app__about__button" ref={moreInfoRef}
+              <a href='./Gabriel Tambare - Resume - Front end Developer.pdf' download type="button" className="app__about__button" ref={moreInfoRef}
                 onClick={() => {}}>
                 CV
               </a>

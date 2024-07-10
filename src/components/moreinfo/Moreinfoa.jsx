@@ -20,10 +20,10 @@ const Moreinfoa = ({ showMore, click }) => {
                 Outside of my studies, I have passions that are an integral part of my life.
                 Boxing is more than a sport for me, it is a passion that has taught me discipline and determination.
             </p>
-            <p className='app__more__p p__opensans'>
+            {/* <p className='app__more__p p__opensans'>
                 I have also been a fan of cars and racing since I was a child,
                 but especially since Fernando Alonso won his first world championship, I am a big fan of Formula 1.
-            </p>
+            </p> */}
             <p className='app__more__p p__opensans'>
                 I am also passionate about music and I know how to play several instruments,
                 having done concerts and presentations in high school.
