@@ -32,6 +32,12 @@
   font: 400 30px var(--font-alt);
 }
 
+@media all and (max-width: 900px) {
+  .app__navbar {
+    position: relative;
+  }
+}
+
 @media all and (max-width: 650px) {
   .app__navbar__projects,
   .app__navbar__contact {
