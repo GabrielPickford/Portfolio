@@ -20,6 +20,27 @@ a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1150px) {
+
+}
+
+@media screen and (max-width: 900px) {
+    .p__opensans {
+        font-size: 16px;
+    }    
+    .h__opensans{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .p__opensans {
+        font-size: 16px;
+    }    
+    .h__opensans{
+        font-size: 32px;
+    }
+}
 
 
 @-webkit-keyframes scale-up-center {
@@ -43,18 +64,5 @@ a {
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-}
-
-@media screen and (max-width: 500px) {
-    .p__opensans {
-        font-size: 16px;
-    }    
-    .h__opensans{
-        font-size: 32px;
     }
 }

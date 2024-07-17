@@ -11,7 +11,7 @@ const Header = () => {
       <div className="app__header__title-column">
         <div className="app__header__title-box">
           <div className="app__header__title h__opensans">Front-End React Developer</div>
-          <div className="app__header__line" />
+          {/* <div className="app__header__line" /> */}
           <div className="app__header__paragraph p__opensans">
             Hi, I'm Gabriel Tambare. A passionate Front-end React
             Developer based in Santa Cruz, Bolivia.
