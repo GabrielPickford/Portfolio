@@ -12,13 +12,9 @@
   display: flex;  
   justify-content: center;
   align-items: center ;
-  margin: 60px;
   gap: 30px;
   height: 100%;
   width: 50%;
-}
-.app__header__linkedin-logo{
-  size: 4.1;
 }
 .app__footer__copyright-box {
   display: flex;
@@ -34,7 +30,6 @@
   align-self: end; 
   margin: 0px 4px 4px 0;
 }
-
 @media all and (max-width: 650px) {
   .app__footer {
     max-height: 50vw;

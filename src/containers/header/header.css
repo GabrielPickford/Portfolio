@@ -91,6 +91,7 @@
 
 @media screen and (max-width: 900px) {
   .app__header {
+    height: 900px;
     box-shadow: none;
     align-items: center;
     flex-direction: column;
@@ -118,6 +119,7 @@
 @media all and (max-width: 650px) {
   .app__header {
     flex-direction: column;
+    height: 650px;
   }
   .app__header__title-column {
     padding: 0;

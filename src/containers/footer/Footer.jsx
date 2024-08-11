@@ -1,7 +1,7 @@
 import React from 'react';
 import { LuGithub } from "react-icons/lu";
 import { LiaLinkedin } from "react-icons/lia";
-import { images } from '../../constants';
+// import { images } from '../../constants';
 import './footer.css';
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="app__footer__copyright-box">
           <div className="app__footer__copyright">Copyright © 2024. All rights are reserved</div>
         </div>
-      <img className="app__footer__dots" src={images.dots2} alt="." />
+      {/* <img className="app__footer__dots" src={images.dots2} alt="." /> */}
     </div>
   );
 };
