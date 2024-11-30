@@ -1,28 +1,92 @@
-import React from 'react'
+'use client'
+import React, { useState, useRef } from 'react';
+import { Toaster, toast } from 'react-hot-toast';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Image from 'next/image'
+import Moreinfo from './Moreinfo';
 
-const AboutMe = () => {
-    return (
-        <div className='flex flex-col md:flex-row w-full h-auto overflow-hidden pt-[90px]'>
-            <section className='flex items-center justify-center w-full md:w-2/5 p-6'>
-                <Image
-                    src="/assets/programacion.jpg"
-                    alt="DotDager"
-                    width={450} height={0}
-                    className='border-solid border-2 border-orange-500 rounded-lg shadow-2xl w-full max-w-sm mx-auto' />
-            </section>
-            <section className='flex flex-col items-center justify-center w-full md:w-3/5 p-6'>
-                <h1 className="heading text-center text-3xl md:text-4xl font-bold">¡Hola! Soy Dot Dager.</h1>
-                <p className="sub-heading text-base md:text-lg text-left">
-                    Soy un creador de contenido que se divierte tanto escribiendo código como disfrutando de una buena conversación sobre filosofía. Pero, si hay algo que realmente me apasiona (más que todo lo demás), son los pepinos. ¡Sí, esos crujientes y frescos vegetales que le dan un toque único a cualquier plato! Mis amigos dicen que tengo una relación especial con ellos… y no podría estar más de acuerdo.
-                    <br /><br />
-                    Aparte de mi amor por los pepinos, me encanta pasar tiempo con mis gatos, tocar la guitarra, y explorar las profundidades del pensamiento. Este espacio es una pequeña ventana a mi mundo, donde la creatividad, la reflexión y, por supuesto, los pepinos, se dan la mano para mostrar lo que soy.
-                    <br /><br />
-                    Así que, si te gustan las ideas frescas y algo fuera de lo común, ¡te invito a quedarte y descubrir más de mí!
-                </p>
-            </section>
+const About = () => {
+  const [showLess, setShowLess] = useState(false);
+  const lessInfoRef = useRef<HTMLDivElement | null>(null);
+  const moreInfoRef = useRef<HTMLAnchorElement | null>(null);
+
+  const click = () => {
+    setShowLess(!showLess);
+    if (showLess) {
+      lessInfoRef.current?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      moreInfoRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="font-work-sans w-full flex flex-col items-center justify-center text-yellow-200" id="contact" ref={lessInfoRef}>
+      <div className="flex flex-col md:flex-row justify-center mt-20 max-w-5xl w-full">
+        <div className="flex justify-center items-center w-full md:w-1/2">
+          <Image
+            className="border-4 border-orange-500 h-84 w-96 object-cover"
+            src="/assets2/about2.png"
+            width={2000}
+            height={2000}
+            alt="portrait" />
         </div>
-    )
-}
+        <div className="flex flex-col w-full md:w-1/2">
+          <div className="p-12">
+            <h2 className="text-2xl font-bold text-yellow-300">About me</h2>
+            <div className="h-0.5 bg-yellow-300 mt-3 w-20" />
+            <p className="mt-5 text-lg">
+              Hey, my name is Gabriel, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.
+              <br/><br/>
+              My main stack currently is React in combination with CSS and JavaScript, but I am in constant development learning new useful skills.
+            </p>
+            <div className="flex gap-5 mt-7">
+              <button
+                type="button"
+                className="button"
+                onClick={click}
+              >
+                {showLess ? 'Less' : 'More'}
+              </button>
+              <a
+                href="./Gabriel_Tambare_Resume_Front_end_Developer.pdf"
+                download
+                className="button"
+                ref={moreInfoRef}
+              >
+                CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-export default AboutMe
+      <div>
+        {/* <Moreinfo showMore={showLess} click={click} /> */}
+      </div>
+
+      <div className="flex justify-center items-center bg-primary-200 text-white p-14 gap-5 w-full">
+        <div className="text-2xl text-30-semibold">josegabriel.jgtc42@gmail.com</div>
+        <CopyToClipboard text="josegabriel.jgtc42@gmail.com">
+          <button
+            type="button"
+            className="button"
+            onClick={() => toast('Copied', {
+              className: 'p-2 font-medium',
+              style: {
+                backgroundColor: '#ffd900',
+                color: 'black'
+              }
+            })}
+          >
+            <span>
+              Copy
+            </span>
+          </button>
+        </CopyToClipboard>
+        <Toaster position="bottom-center" />
+      </div>
+    </div>
+  );
+};
+
+export default About;

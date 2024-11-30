@@ -40,55 +40,57 @@ body {
     .image {
         @apply border-solid border-2 border-orange rounded-lg shadow-xl w-full
     }
-  .flex-between {
+    .flex-between {
       @apply flex justify-between items-center;
-  }
-
-  .text-30-extrabold {
+    }
+     .text-30-extrabold {
       @apply text-[30px] font-extrabold text-white;
-  }
+    }
 
-  .text-30-bold {
+    .text-30-bold {
       @apply text-[30px] font-bold;
-  }
+    }
 
-  .text-30-semibold {
-      @apply font-semibold text-[30px];
-  }
+    .text-30-semibold {
+        @apply font-semibold text-[30px];
+    }
 
-  .text-26-semibold {
-      @apply font-semibold text-[26px] text-black;
-  }
+    .text-26-semibold {
+        @apply font-semibold text-[26px] text-black;
+    }
 
-  .text-24-black {
-      @apply text-[24px] font-black text-black;
-  }
+    .text-24-black {
+        @apply text-[24px] font-black text-black;
+    }
 
-  .text-20-medium {
-      @apply font-medium text-[20px];
-  }
+    .text-20-medium {
+        @apply font-medium text-[20px];
+    }
 
-  .text-16-medium {
-      @apply font-medium text-[16px] text-black;
-  }
+    .text-16-medium {
+        @apply font-medium text-[16px] text-black;
+    }
 
-  .text-14-normal {
-      @apply font-normal text-sm text-white-100/80;
-  }
+    .text-14-normal {
+        @apply font-normal text-sm text-white-100/80;
+    }
 
-  .heading {
-      @apply px-6 py-3 font-work-sans font-semibold  sm:text-[50px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
-  }
+    .heading {
+        @apply px-6 py-3 font-work-sans font-semibold  sm:text-[50px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+    }
 
-  .sub-heading {
-      @apply font-medium text-[20px] max-w-2xl  break-words;
-  }
+    .sub-heading {
+        @apply font-medium text-[20px] max-w-2xl  break-words;
+    }
 
-  .card_grid {
-      @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
-  }
+    .card_grid {
+        @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+    }
 
-  .card_grid-sm {
-      @apply grid sm:grid-cols-2 gap-5;
-  }
+    .card_grid-sm {
+        @apply grid sm:grid-cols-2 gap-5;
+    }
+    .button {
+        @apply h-[44px] w-[120px] text-center text-yellow-200 border-2 border-yellow-200 py-2 px-6 text-lg font-semibold hover:bg-secondary hover:border-secondary hover:text-black transition-all;
+    }
 }
