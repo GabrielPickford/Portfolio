@@ -10,7 +10,7 @@ type LProjectsProps = {
     site: string;
     code: string;
 };
-
+ 
 const LeftCard = ({ title, image, description, site, code }: LProjectsProps) => {
     return (
         <div className="flex max-w-screen-xl mx-auto mt-8">
@@ -42,7 +42,7 @@ const LeftCard = ({ title, image, description, site, code }: LProjectsProps) => 
                         alt={title}
                         width={800}
                         height={800}
-                        className="object-center w-[50vw]"
+                        className="object-center w-[55vw]"
                     />
                 </div>
             </a>
