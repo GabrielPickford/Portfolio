@@ -25,7 +25,7 @@ const Card = () => {
                     <HtmlIcon width={WidthIcon} />
                     <CssIcon width={WidthIcon} />
                     <JavascriptIcon width={WidthIcon} />
-                    <ReactIcon width={WidthIcon} />
+                    <ReactIcon width={WidthIcon} name={'ReactJs'} />
                     <TailwindcssIcon width={WidthIcon} />
                     <TypescriptIcon width={WidthIcon} />
                 </section>
@@ -34,7 +34,7 @@ const Card = () => {
                 <h1 className='text-30-semibold pb-3'>BackEnd</h1>
                 <section className='card_grid '>
                     <JavaScriptIcon width={WidthIcon} />
-                    <NextjsIcon width={WidthIcon} />
+                    <NextjsIcon width={WidthIcon} name={"NextJS"}/>
                     <PythonIcon width={WidthIcon} />
                     <SanityIcon width={WidthIcon} />
                 </section>

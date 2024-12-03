@@ -2,9 +2,8 @@
 import React, { useState, useRef } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import Image from 'next/image'
+import { MdOutlineContentCopy } from "react-icons/md";
 import Moreinfo from './Moreinfo';
-import JavascriptIcon from './icons/frontend/JavascriptIcon';
 import Card from './Card';
 
 const About = () => {
@@ -22,10 +21,10 @@ const About = () => {
   };
 
   return (
-    <div className="font-work-sans w-full flex flex-col items-center justify-center text-yellow-200" id="contact" ref={lessInfoRef}>
+    <div className="font-work-sans w-full flex flex-col items-center justify-center text-yellow-200" id="contact" >
       <div className="flex flex-col md:flex-row justify-center mt-20 w-full">
         <div className="  flex justify-center items-center w-full md:w-1/2 ">
-        <Card/>
+          <Card />
           {/* <Image
             className=" border-4 border-orange-500 h-84 w-96 object-cover"
             src="/assets2/about2.png"
@@ -35,7 +34,7 @@ const About = () => {
         </div>
 
         {/* text */}
-        <div className="flex w-full md:w-1/2 p-12 items-center justify-center">
+        <div className="flex w-full md:w-1/2 p-12 items-center justify-center" ref={lessInfoRef}>
           <div className='flex flex-col w-[450px] '>
             <h2 className="text-2xl font-bold text-yellow-300">About me</h2>
             <div className="h-0.5 bg-yellow-300 mt-3 w-20" />
@@ -45,17 +44,18 @@ const About = () => {
               My main stack currently is React in combination with CSS and JavaScript, but I am in constant development learning new useful skills.
             </p>
             <div className="flex gap-5 mt-7">
-              <button
+              {/* <button
                 type="button"
                 className="button"
                 onClick={click}
               >
                 {showLess ? 'Less' : 'More'}
-              </button>
+              </button> */}
+              
               <a
                 href="./Gabriel_Tambare_Resume_Front_end_Developer.pdf"
                 download
-                className="button"
+                className="button text-30-semibold"
                 ref={moreInfoRef}
               >
                 CV
@@ -66,7 +66,7 @@ const About = () => {
       </div>
 
       <div>
-        {/* <Moreinfo showMore={showLess} click={click} /> */}
+        <Moreinfo showMore={showLess} click={click} />
       </div>
 
       {/* Email */}
@@ -75,7 +75,6 @@ const About = () => {
         <CopyToClipboard text="josegabriel.jgtc42@gmail.com">
           <button
             type="button"
-            className="button"
             onClick={() => toast('Copied', {
               className: 'p-2 font-medium',
               style: {
@@ -84,9 +83,7 @@ const About = () => {
               }
             })}
           >
-            <span>
-              Copy
-            </span>
+            <MdOutlineContentCopy size="2.2rem"  className='text-secondary hover:text-gray'/>
           </button>
         </CopyToClipboard>
         <Toaster position="bottom-center" />

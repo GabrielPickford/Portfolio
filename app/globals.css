@@ -20,6 +20,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--foreground);
@@ -91,6 +94,6 @@ body {
         @apply grid sm:grid-cols-2 gap-5;
     }
     .button {
-        @apply  h-[44px] w-[120px] text-center text-yellow-200 border-2 border-yellow-200 py-2 px-6 text-lg hover:bg-secondary hover:border-secondary hover:text-black transition-all;
+        @apply  h-[44px] w-[120px] text-center text-yellow-200 border-[3px] border-yellow-200 py-2 px-6 text-lg hover:bg-secondary hover:border-secondary hover:text-black transition-all;
     }
 }

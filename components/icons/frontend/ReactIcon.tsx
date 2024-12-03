@@ -2,15 +2,17 @@ import React from 'react';
 
 type ReactIconProps = {
   width: string;
+  name: string,
 };
 
-const ReactIcon = ({ width }: ReactIconProps) => {
+const ReactIcon = ({ width, name }: ReactIconProps) => {
   return (
     <div className="flex flex-col items-center group group-hover:transition-all duration-300">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="175.7 78 490.6 436.9"
         height={width}
+        width={width}
         className="transition-colors duration-300"
       >
         <g fill="#fff">
@@ -27,7 +29,7 @@ const ReactIcon = ({ width }: ReactIconProps) => {
         </g>
       </svg>
       <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        ReactJS
+        {name}
       </div>
     </div>
   );

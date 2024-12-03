@@ -22,10 +22,10 @@ const LeftCard = ({ title, image, description, site, code }: LProjectsProps) => 
                 {/* Logos de GitHub y Sitio Web */}
                 <div className="flex justify-center items-center gap-8 text-white">
                     <a href={code} target="_blank" rel="noopener noreferrer">
-                        <RiCodeSSlashLine size="2rem" />
+                        <RiCodeSSlashLine size="2rem" className=' hover:text-gray' />
                     </a>
                     <a href={site} target="_blank" rel="noopener noreferrer">
-                        <BiWorld size="2rem" />
+                        <BiWorld size="2rem" className=' hover:text-gray' />
                     </a>
                 </div>
             </div>

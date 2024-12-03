@@ -2,13 +2,15 @@ import React from 'react';
 
 type NextjsIconProps = {
   width: string;
+  name: string,
 };
 
-const NextjsIcon = ({ width }: NextjsIconProps) => {
+const NextjsIcon = ({ width, name }: NextjsIconProps) => {
   return (
     <div className="flex flex-col items-center group group-hover:transition-all duration-300">
       <svg
         height={width}
+        width={width}
         xmlns="http://www.w3.org/2000/svg"
         viewBox=".5 -.2 1023 1024.1"
         className="transition-colors duration-300"
@@ -25,7 +27,7 @@ const NextjsIcon = ({ width }: NextjsIconProps) => {
         />
       </svg>
       <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        NextJS
+        {name}
       </div>
     </div>
   );
