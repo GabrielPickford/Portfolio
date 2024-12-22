@@ -15,45 +15,48 @@ import NpmIcon from './icons/tools/NpmIcon';
 import PostgresqlIcon from './icons/learning/PostgresqlIcon';
 import SanityIcon from './icons/backend/SanityIcon';
 
-const WidthIcon = '50px'
+const WidthIcon = '25px'
 const Card = () => {
     return (
-        <div className='py-10 grid md:grid-cols-2 sm:grid-cols-2 gap-5'>
-            <section className='flex flex-col startup-card group items-center'>
-                <h1 className='text-30-semibold pb-3'>FrontEnd</h1>
-                <section className='card_grid '>
-                    <HtmlIcon width={WidthIcon} />
-                    <CssIcon width={WidthIcon} />
-                    <JavascriptIcon width={WidthIcon} />
-                    <ReactIcon width={WidthIcon} name={'ReactJs'} />
-                    <TailwindcssIcon width={WidthIcon} />
-                    <TypescriptIcon width={WidthIcon} />
+        <div className='flex flex-col '>
+            <h2 className="sm:text-left text-center text-4xl font-bold text-yellow-300">Tech Stack</h2>
+            <div className="h-0.5 bg-transparent sm:bg-yellow-300 mt-3 w-20" />
+            <div className='py-10 grid grid-cols-2 gap-5'>
+                <section className='flex flex-col startup-card group items-center'>
+                    <h1 className='card_h1'>FrontEnd</h1>
+                    <section className='card_grid '>
+                        <HtmlIcon width={WidthIcon} />
+                        <CssIcon width={WidthIcon} name={"CSS"} />
+                        <JavascriptIcon width={WidthIcon} />
+                        <ReactIcon width={WidthIcon} name={'ReactJs'} />
+                        <TailwindcssIcon width={WidthIcon} name={'TailwindCSS'} />
+                        <TypescriptIcon width={WidthIcon} name={'TypeScript'} />
+                    </section>
                 </section>
-            </section>
-            <section className='flex flex-col startup-card group items-center'>
-                <h1 className='text-30-semibold pb-3'>BackEnd</h1>
-                <section className='card_grid '>
-                    <JavaScriptIcon width={WidthIcon} />
-                    <NextjsIcon width={WidthIcon} name={"NextJS"}/>
-                    <PythonIcon width={WidthIcon} />
-                    <SanityIcon width={WidthIcon} />
+                <section className='flex flex-col startup-card group items-center'>
+                    <h1 className='card_h1'>BackEnd</h1>
+                    <section className='card_grid '>
+                        <JavaScriptIcon width={WidthIcon} name={"JavaScript"} />
+                        <NextjsIcon width={WidthIcon} name={"NextJS"} />
+                        <PythonIcon width={WidthIcon} />
+                        <SanityIcon width={WidthIcon} />
+                    </section>
+                </section><section className='flex flex-col startup-card group items-center'>
+                    <h1 className='card_h1'>Learning</h1>
+                    <section className='card_grid '>
+                        <PostgresqlIcon width={WidthIcon} />
+                    </section>
+                </section><section className='flex flex-col startup-card group items-center'>
+                    <h1 className='card_h1'>Tools</h1>
+                    <section className='card_grid '>
+                        <FigmaIcon width={WidthIcon} />
+                        <GitIcon width={WidthIcon} />
+                        <GithubIcon width={WidthIcon} />
+                        <NpmIcon width={WidthIcon} />
+                    </section>
                 </section>
-            </section><section className='flex flex-col startup-card group items-center'>
-                <h1 className='text-30-semibold pb-3'>Learning</h1>
-                <section className='card_grid '>
-                    <PostgresqlIcon width={WidthIcon} />
-                </section>
-            </section><section className='flex flex-col startup-card group items-center'>
-                <h1 className='text-30-semibold pb-3'>Tools</h1>
-                <section className='card_grid '>
-                    <FigmaIcon width={WidthIcon} />
-                    <GitIcon width={WidthIcon} />
-                    <GithubIcon width={WidthIcon} />
-                    <NpmIcon width={WidthIcon} />
-                </section>
-            </section>
+            </div>
         </div>
-
     )
 }
 //href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}

@@ -2,9 +2,10 @@ import React from 'react';
 
 type TailwindcssIconProps = {
   width: string;
+  name: string,
 };
 
-const TailwindcssIcon = ({ width }: TailwindcssIconProps) => {
+const TailwindcssIcon = ({ width, name}: TailwindcssIconProps) => {
   return (
     <div className="flex flex-col items-center group group-hover:transition-all duration-300">
       <svg
@@ -20,8 +21,8 @@ const TailwindcssIcon = ({ width }: TailwindcssIconProps) => {
           className="group-hover:fill-[#06b6d4] transition-colors duration-300"
         />
       </svg>
-      <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        Tailwindcss
+      <div className="text-[11px] font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
+        {name}
       </div>
     </div>
   );

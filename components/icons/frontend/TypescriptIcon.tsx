@@ -2,9 +2,10 @@ import React from 'react';
 
 type TypescriptIconProps = {
   width: string;
+  name: string,
 };
 
-const TypescriptIcon = ({ width }: TypescriptIconProps) => {
+const TypescriptIcon = ({ width, name }: TypescriptIconProps) => {
   return (
     <div className="flex flex-col items-center group group-hover:transition-all duration-300 ">
       <svg
@@ -25,7 +26,7 @@ const TypescriptIcon = ({ width }: TypescriptIconProps) => {
         />
       </svg>
       <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        TypeScript
+        {name}
       </div>
     </div>
   );

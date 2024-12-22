@@ -2,9 +2,10 @@ import React from 'react';
 
 type CssIconProps = {
   width: string;
+  name: string,
 };
 
-const CssIcon = ({ width }: CssIconProps) => {
+const CssIcon = ({ width, name }: CssIconProps) => {
   return (
     <div className="flex flex-col items-center group group-hover:transition-all duration-300">
       <svg
@@ -30,7 +31,7 @@ const CssIcon = ({ width }: CssIconProps) => {
         />
       </svg>
       <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        CSS
+        {name}
       </div>
     </div>
   );

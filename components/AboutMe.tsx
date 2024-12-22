@@ -27,7 +27,7 @@ const About = () => {
           <Card />
           {/* <Image
             className=" border-4 border-orange-500 h-84 w-96 object-cover"
-            src="/assets2/about2.png"
+            src="/assets/about.png"
             width={2000}
             height={2000}
             alt="portrait" /> */}
@@ -38,7 +38,7 @@ const About = () => {
           <div className='flex flex-col w-[450px] '>
             <h2 className="text-2xl font-bold text-yellow-300">About me</h2>
             <div className="h-0.5 bg-yellow-300 mt-3 w-20" />
-            <p className="mt-5 text-lg">
+            <p className="mt-5 sm:text-lg text-md">
               Hey, my name is Gabriel, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.
               <br /><br />
               My main stack currently is React in combination with CSS and JavaScript, but I am in constant development learning new useful skills.
@@ -51,7 +51,7 @@ const About = () => {
               >
                 {showLess ? 'Less' : 'More'}
               </button> */}
-              
+
               <a
                 href="./Gabriel_Tambare_Resume_Front_end_Developer.pdf"
                 download
@@ -71,7 +71,7 @@ const About = () => {
 
       {/* Email */}
       <div className="flex justify-center items-center bg-primary-200 text-white p-14 gap-5 w-full ">
-        <div className="text-2xl text-30-semibold">josegabriel.jgtc42@gmail.com</div>
+        <div className="text-[5vw] sm:text-[30px] text-30-semibold">josegabriel.jgtc42@gmail.com</div>
         <CopyToClipboard text="josegabriel.jgtc42@gmail.com">
           <button
             type="button"
@@ -83,7 +83,7 @@ const About = () => {
               }
             })}
           >
-            <MdOutlineContentCopy size="2.2rem"  className='text-secondary hover:text-gray'/>
+            <MdOutlineContentCopy size="2.2rem" className='text-secondary hover:text-gray' />
           </button>
         </CopyToClipboard>
         <Toaster position="bottom-center" />
@@ -91,5 +91,4 @@ const About = () => {
     </div>
   );
 };
-
 export default About;

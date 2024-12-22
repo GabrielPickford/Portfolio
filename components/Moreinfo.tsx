@@ -26,7 +26,7 @@ const Moreinfo = ({ showMore, click }: MoreinfoProps) => {
         </p>
         <Image
           className=" border-4 border-orange-500 h-84 w-96 object-cover"
-          src="/assets2/about2.png"
+          src="/assets/about.png"
           width={2000}
           height={2000}
           alt="portrait" />
