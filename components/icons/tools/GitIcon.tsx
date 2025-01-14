@@ -22,7 +22,7 @@ const GitIcon = ({ width }: GitIconProps) => {
         />
       </svg>
       <div className="text-xs font-work-sans text-white group-hover:text-[#000] transition-colors duration-300">
-        GIT
+      GIT 
       </div>
     </div>
   );

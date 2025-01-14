@@ -38,10 +38,12 @@ const About = () => {
           <div className='flex flex-col w-[450px] '>
             <h2 className="text-2xl font-bold text-yellow-300">About me</h2>
             <div className="h-0.5 bg-yellow-300 mt-3 w-20" />
-            <p className="mt-5 sm:text-lg text-md">
-              Hey, my name is Gabriel, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.
+            <p className="mt-5 text-md">
+              Hey there! I'm Gabriel, a frontend developer who's obsessed with creating smooth, user-friendly experiences. I love building fast, accessible, and stylish interfaces that make users go, "Wow, this is nice!"
               <br /><br />
-              My main stack currently is React in combination with CSS and JavaScript, but I am in constant development learning new useful skills.
+              Right now, my main stack is Next.js, JavaScript, TypeScript, and Tailwind CSS, but I'm constantly leveling up my skills to stay ahead of the curve and keep things fresh.
+              <br /><br />
+              I'm also pretty good at rolling with the punches, adapting to new challenges, and finding clever solutions on the fly—because hey, flexibility is key!
             </p>
             <div className="flex gap-5 mt-7">
               {/* <button

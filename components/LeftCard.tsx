@@ -16,10 +16,10 @@ type LProjectsProps = {
 
 const LeftCard = ({ Заголовок, image, description, site, code, Icon, Icon2, Icon3 }: LProjectsProps) => {
     return (
-        <div className="flex flex-col md:flex-row mt-8 pb-11 md:pb-0">
+        <div className="flex flex-col md:flex-row mt-8 pb-11 md:pb-0 w-full">
             {/* Imagen del proyecto */}
             <a
-                className="flex flex-col items-center w-full md:w-2/3 md:order-1"
+                className="flex flex-col items-center w-full md:w-3/5 md:order-1"
                 href={site}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,7 +45,7 @@ const LeftCard = ({ Заголовок, image, description, site, code, Icon, Ic
                     <Icon3 width="25px" name="" />
                 </div>
 
-                <p className="font-work-sans sm:text-lg text-md text-center px-5">{description}</p>
+                <p className="font-work-sans text-md text-center px-10">{description}</p>
 
                 <div className="flex justify-center items-center gap-8 text-white ">
                     <a href={code} target="_blank" rel="noopener noreferrer">

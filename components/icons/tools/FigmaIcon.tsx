@@ -11,7 +11,7 @@ const FigmaIcon = ({ width }: FigmaIconProps) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="1.466 2.199 285.068 427.602"
         height={width}
-        width={width}
+        width={50}
         className="transition-colors duration-300"
         style={{ backgroundColor: 'transparent' }} // Asegura que el fondo del SVG sea transparente
       >

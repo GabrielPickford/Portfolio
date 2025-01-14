@@ -6,10 +6,10 @@ import Work from "@/components/Work";
 export default function Home() {
   return (
     <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <Header/>
-      <AboutMe/>
-      <Work/>
-      <Footer/>
+      <Header />
+      <AboutMe />
+      <Work />
+      <Footer />
     </div>
   );
 }

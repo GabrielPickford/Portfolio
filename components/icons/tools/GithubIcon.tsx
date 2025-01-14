@@ -11,7 +11,7 @@ const GithubIcon = ({ width }: GithubIconProps) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -3.1 2490.3 2493"
         height={width}
-        width={width}
+        width={50}
         className="transition-colors duration-300"
       >
         {/* Aplicamos la transición al color de fondo del círculo */}

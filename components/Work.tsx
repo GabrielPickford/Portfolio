@@ -23,32 +23,6 @@ const Interests = () => {
 
       <section className='flex'>
         <RightCard
-          title="DotDager"
-          image="/assets/atelier.png"
-          description="Website designed from scratch with Figma and created with React for a handmade jewelry store"
-          site="https://atelier-phi.vercel.app/"
-          code="https://github.com/GabrielPickford/Atelier"
-          Icon={ReactIcon} 
-          Icon2={TypescriptIcon} 
-          Icon3={TailwindcssIcon} 
-        />
-      </section>
-
-      <section className='flex'>
-        <LeftCard
-          Заголовок="Atelier"
-          image="/assets/golosa.png"
-          description="Website designed from scratch with Figma and created with React for a handmade jewelry store"
-          site="https://atelier-phi.vercel.app/"
-          code="https://github.com/GabrielPickford/Atelier"
-          Icon={NextjsIcon} 
-          Icon2={TypescriptIcon} 
-          Icon3={TailwindcssIcon} 
-        />
-      </section>
-
-      <section className='flex'>
-        <RightCard
           title="Atelier"
           image="/assets/atelier.png"
           description="Website designed from scratch with Figma and created with React for a handmade jewelry store"
@@ -57,6 +31,32 @@ const Interests = () => {
           Icon={ReactIcon} 
           Icon2={JavaScriptIcon} 
           Icon3={CssIcon} 
+        />
+      </section>
+
+      <section className='flex'>
+        <LeftCard
+          Заголовок="Golosa"
+          image="/assets/golosa.png"
+          description="Ice cream shop website built with React, CSS, and JavaScript, offering a modern and responsive design."
+          site="https://golosa.vercel.app/"
+          code="https://github.com/GabrielPickford/Restaurant"
+          Icon={ReactIcon} 
+          Icon2={JavaScriptIcon} 
+          Icon3={CssIcon}
+        />
+      </section>
+
+      <section className='flex'>
+        <RightCard
+          title="DotDager"
+          image="/assets/dotdager.png"
+          description="DotDager is a website created for a contest hosted by the YouTuber DotDager, built with Next.js, TypeScript, and TailwindCSS, featuring a modern and responsive design"
+          site="https://dot-dager-three.vercel.app/"
+          code="https://github.com/GabrielPickford/DotDager"
+          Icon={NextjsIcon} 
+          Icon2={TypescriptIcon} 
+          Icon3={TailwindcssIcon}  
         />
       </section>
     </div>

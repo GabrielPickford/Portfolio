@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import JavascriptIcon from './icons/frontend/JavascriptIcon';
 import HtmlIcon from './icons/frontend/HtmlIcon';
 import CssIcon from './icons/frontend/CssIcon';
@@ -15,8 +15,23 @@ import NpmIcon from './icons/tools/NpmIcon';
 import PostgresqlIcon from './icons/learning/PostgresqlIcon';
 import SanityIcon from './icons/backend/SanityIcon';
 
-const WidthIcon = '25px'
 const Card = () => {
+    const [WidthIcon, setWidthIcon] = useState('40px');
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setWidthIcon('25px');
+            } else {
+                setWidthIcon('40px');
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Set initial size
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return (
         <div className='flex flex-col '>
             <h2 className="sm:text-left text-center text-4xl font-bold text-yellow-300">Tech Stack</h2>
